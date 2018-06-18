@@ -1,3 +1,33 @@
+@import "var";
+@import "normalize";
 body{
     font-weight: 200;
+    font-family: monospace;
+    font-size: 17px;
 }
+.wrapper{
+    z-index: 2;
+    position: relative;
+}
+.bg{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-image: $img_background;
+    background-size: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.slide{
+    @extend .flex;
+    height: 100vh;
+    color: white;
+}
+
+.slide:nth-child(even){
+    background-color: $even_slide_background;
+}
+.slide:nth-child(odd){
+    background: $odd_slide_background;
+}
+
