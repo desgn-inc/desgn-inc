@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
 }
 .slide{
-    @extend .flex;
+    @extend .center;
     height: 100vh;
     color: white;
 }

@@ -1,52 +1,34 @@
-* {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  box-sizing: content-box;
-}
-
-.flex, .slide {
+.center, .slide {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-ul {
-  list-style: none;
-}
+  justify-content: center; }
 
 body {
   font-weight: 200;
   font-family: monospace;
-  font-size: 17px;
-}
+  font-size: 17px; }
 
 .wrapper {
   z-index: 2;
-  position: relative;
-}
+  position: relative; }
 
 .bg {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background-image: url(/img/viva.png);
+  background-image: url("/img/viva.png");
   background-size: 100vh;
   background-position: right;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .slide {
   height: 100vh;
-  color: white;
-}
+  color: white; }
 
 .slide:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .slide:nth-child(odd) {
-  background: rgba(0, 0, 0, 0.9);
-}
+  background: white; }
 
 /*# sourceMappingURL=style.css.map */
