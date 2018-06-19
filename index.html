@@ -6,23 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Desgn Inc.</title>
-
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
+    <style type="text/css">
+    html{
+      overflow-x: hidden;
+    }
+    .wrapper{
+      width: 100vw;
+      overflow-x: hidden;
+    }
+      .special{
+        background: transparent;
+      }
+      .special > *{
+        width: 50%;
+        height: 100%;
+      }
+      .caption{
+        z-index: 5;
+        width: 50%;
+        position: relative;
+        color: black;
+      }
+      .caption::after{
+        height: 300vh;
+        background: white;
+        bottom: 0;
+        transform: rotate(-23deg);
+        content: " ";
+        position: absolute;
+        right: -10%;
+        z-index: 1;
+        width: 100%;
+      }
+    </style>
     <body>
         <div class="bg"></div>
         <div class="wrapper">
-            <section class="slide">
-                <h1>About</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <section class="slide special">
+              <div class="logo">
+                <h3>Design</h3>
+              </div>
+              <div class="caption">
+                <h1>All you have to do is think and we build</h1>
+              </div>
             </section>
             <section class="slide">
                 Hire
