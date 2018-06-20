@@ -9,48 +9,30 @@
         <!-- CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
-    <style type="text/css">
-    html{
-      overflow-x: hidden;
-    }
-    .wrapper{
-      width: 100vw;
-      overflow-x: hidden;
-    }
-      .special{
-        background: transparent;
-      }
-      .special > *{
-        width: 50%;
-        height: 100%;
-      }
-      .caption{
-        z-index: 5;
-        width: 50%;
-        position: relative;
-        color: black;
-      }
-      .caption::after{
-        height: 300vh;
-        background: white;
-        bottom: 0;
-        transform: rotate(-23deg);
-        content: " ";
-        position: absolute;
-        right: -10%;
-        z-index: 1;
-        width: 100%;
-      }
-    </style>
     <body>
         <div class="bg"></div>
+            <div class="page_nav">
+              <div class="logo">
+                <img src="/img/logo.png">
+              </div>
+              <nav>
+                <a href="#">Home</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+              </nav>
+            </div>
         <div class="wrapper">
             <section class="slide special">
-              <div class="logo">
-                <h3>Design</h3>
+              <div class="back">
+                <img src="/img/bg.svg">
               </div>
               <div class="caption">
-                <h1>All you have to do is think and we build</h1>
+                <div class="cap_content">
+                  <h1>All you have to do is think and we build</h1>
+                  <p>
+                    <a href="#" class="btn">Hire Us</a>
+                  </p>
+                </div>
               </div>
             </section>
             <section class="slide">
@@ -66,5 +48,6 @@
                 Footer
             </footer>
         </div>
+        <script src="/js/main.js"></script>
     </body>
 </html>
