@@ -65,9 +65,9 @@ body{
 
 // Nav
 .page_nav{
-    transition: height 0.7s ease;
+    transition: height 0.7s ease, top 0.5s ease;
     position: fixed;
-    top: 0;
+    top: 50px;
     z-index: 4;
     height: 100px;
     font-weight: 600;
@@ -90,16 +90,25 @@ body{
             height: 70px;
             width: 70px;
         }
+        .invisible{
+            visibility: hidden;
+            display: none;
+        }
     }
 }
 .float{
     background-color: #fefefe;
     color: #1a1a1a;
-    height: 90px;
+    height: 40px;
+    top: 0;
     border-bottom: 1px solid #c3c3c3;
     .logo{
         img{
-
+            display: none;
+        }
+        .invisible{
+            visibility: visible;
+            display: block;
         }
     }
 }

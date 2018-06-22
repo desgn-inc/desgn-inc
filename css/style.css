@@ -86,9 +86,9 @@ body {
       text-align: center; }
 
 .page_nav {
-  transition: height 0.7s ease;
+  transition: height 0.7s ease, top 0.5s ease;
   position: fixed;
-  top: 0;
+  top: 50px;
   z-index: 4;
   height: 100px;
   font-weight: 600;
@@ -107,11 +107,20 @@ body {
   .page_nav .logo img {
     height: 70px;
     width: 70px; }
+  .page_nav .logo .invisible {
+    visibility: hidden;
+    display: none; }
 
 .float {
   background-color: #fefefe;
   color: #1a1a1a;
-  height: 90px;
+  height: 40px;
+  top: 0;
   border-bottom: 1px solid #c3c3c3; }
+  .float .logo img {
+    display: none; }
+  .float .logo .invisible {
+    visibility: visible;
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
