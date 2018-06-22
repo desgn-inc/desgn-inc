@@ -60,7 +60,7 @@ body {
 .wrapper {
   z-index: 2;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .bg-images {
@@ -145,6 +145,7 @@ body {
 }
 .page_nav nav a {
   margin: 0 30px;
+  transition: all 0.25s;
   position: relative;
 }
 .page_nav nav a::after {
@@ -163,7 +164,7 @@ body {
 }
 .page_nav nav a:hover {
   opacity: 0.8;
-  color: #bd1355ff;
+  letter-spacing: 0.13em;
 }
 .page_nav .logo img {
   transition: transform 0.5s ease;

@@ -11,7 +11,7 @@ body{
 .wrapper{
     z-index: 2;
     position: relative;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.75);
 }
 .bg-images{
     @extend .flex-center;
@@ -95,6 +95,7 @@ body{
         justify-content: flex-end;
         a{
             margin: 0 30px ;
+            transition: all 0.25s;
             position: relative;
         }
         a::after{
@@ -113,7 +114,7 @@ body{
         }
         a:hover{
             opacity: 0.8;
-            color: #bd1355ff;
+            letter-spacing: 0.13em;
         }
     }
     .logo{
