@@ -1,5 +1,6 @@
 @import "var";
 @import "normalize";
+@import "fa/font-awesome.min.css";
 
 body{
     font-weight: 300;
@@ -22,7 +23,7 @@ body{
     z-index: 3;
     bottom: 0;
     img{
-        height: 80%;
+        height: 60%;
     }
 
 }
@@ -38,6 +39,13 @@ body{
     display:  flex;
     align-items:  center;
     border-bottom: 1px solid #f3f3f3;
+    a{
+        margin: 0 7px;
+
+    }
+    a:hover{
+        color: #1f3c3d;
+    }
 }
 .bg{
     height: 100vh;
@@ -58,12 +66,46 @@ body{
 }
 
 .slide:nth-child(even){
+    //background-color: $odd_slide_background;
+    .title{
+        position: absolute;
+        bottom: 0;
+        padding: 1em;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        padding: 1em;
+        font-weight: 500;
+        height: 50px;
+        @extend .flex-center;
+        background-color: #fcfcfc;
+        border: 1px solid #e3e3e3;
+    }
 }
 .slide:nth-child(odd){
     background-color: white;
-    box-shadow: 2px 2px 5px #d1d1d1,-1px -1px 3px #d1d1d1;
+    box-shadow: 1px 1px 5px #d1d1d188, -1px -1px 3px #d1d1d188;
 }
-
+@media(min-width: 500px){
+    .page_nav{
+        top: 50px;
+    }
+}
+@media(max-width: 500px){
+    .contact{
+        flex-direction: column;
+    }
+    .contact{
+        height: auto;
+        position: relative;
+        padding: 0.5em 0;
+    }
+    .page_nav{
+        top: auto;
+    }
+    .slide{
+        padding: 0 15px
+    }
+}
 .special{
         background-color: white;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 900'%3E%3Cpath fill='#F9F9F8' d='M0 504 0 899 1600 899 1603 120z'/%3E%3Cpath fill='#F7F7F3F7' d='M1600 567 1600 899 0 899 0 165z'/%3E%3Cpath fill='#f3f3f3' d='M0 680 0 899 1600 899 1600 300z'/%3E%3Cpath fill='#f1f1f1' d='M1600 719 1600 899 0 899 0 353z'/%3E%3Cpath fill='#e8e8e8' d='M0 788 0 899 1600 899 1600 625z'/%3E%3C/svg%3E");
@@ -72,10 +114,26 @@ body{
         background-position: center;
     h1{
         font-weight: 200;
+        text-align: center;
         font-size: 250%;
     }
     > *{
         margin: 15px 0;
+    }
+}
+.contact_slide{
+    > p, > aside{
+        margin: 15px;
+    }
+    h1{
+        font-weight: 100;
+        font-family: monospace;
+        margin: 15px 0;
+    }
+    aside{
+        a{
+            margin: 15px;
+        }
     }
 }
 
@@ -83,7 +141,6 @@ body{
 .page_nav{
     transition: height 0.6s ease, top 0.3s ease;
     position: fixed;
-    top: 50px;
     z-index: 4;
     font-size: 110%;
     width: 100%;
@@ -102,20 +159,20 @@ body{
         a::after{
             width:  0%;
             height:  2px;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid #23d3d2;
             position: absolute;
             bottom: 0;
             content: " ";
             z-index:  2;
             left: 0;
-            transition: all 0.25s ease, width 0.5s ease;
+            transition: all 0.25s ease, width 0.25s ease;
         }
         a:hover::after{
             width: 100%;
         }
         a:hover{
-            opacity: 0.8;
-            letter-spacing: 0.13em;
+            color: #9323cf;
+            transform: scale(1.05);
         }
     }
     .logo{
@@ -153,3 +210,4 @@ body{
         }
     }
 }
+
