@@ -78,7 +78,7 @@ body {
 .contact {
   position: absolute;
   z-index: 5;
-  box-shadow: 2px 2px 5px #f1f1f1 inset;
+  box-shadow: 2px 2px 5px #f1f1f1 inset,-2px -2px 5px #f1f1f1 inset;
   background: white;
   width: 100%;
   height: 50px;
@@ -110,6 +110,7 @@ body {
 
 .slide:nth-child(odd) {
   background-color: white;
+  box-shadow: 2px 2px 5px #d1d1d1,-1px -1px 3px #d1d1d1;
 }
 
 .special {
