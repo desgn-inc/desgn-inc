@@ -7,7 +7,9 @@ body{
     font-family: Lato, sans-serif;
     font-size: 17px;
     color: #1a1a1a;
-
+    background-position: center;
+    background-image: url(/img/pattern.svg);
+    background-attachment: fixed;
 }
 .wrapper{
     z-index: 2;
@@ -46,14 +48,6 @@ body{
     a:hover{
         color: #1f3c3d;
     }
-}
-.bg{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    background-size: cover;
-    background-position: center;
-    background-image: url(/img/pattern.svg);
 }
 .slide{
     height: 100vh;
