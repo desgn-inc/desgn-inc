@@ -207,7 +207,7 @@ body{
 }
 // Footer
 footer.slide{
-    height: 60vh;
+    height: calc(100vh - 50px);
     font-weight: 400;
     nav{
         @extend .flex-center;
